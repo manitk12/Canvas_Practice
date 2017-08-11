@@ -1,27 +1,20 @@
 package com.grademojo.canvas_practice;
 
-import android.app.Activity;
+
+
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.widget.ImageView;
 
-import java.util.Random;
 
 public class RotatingImageView1 extends ImageView {
 
     private int rotationDegrees = 0;
     private float scale ;
     private int directionScale ;
-    private int count = 0;
 
     private int countScaleChange = 0;
 

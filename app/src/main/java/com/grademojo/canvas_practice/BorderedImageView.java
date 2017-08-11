@@ -18,7 +18,7 @@ public class BorderedImageView extends ImageView {
     private RectF rectF;
 
 
-    /** Simple constructor. */
+
     public BorderedImageView(Context context) {
         super(context);
         init();
@@ -70,12 +70,14 @@ public class BorderedImageView extends ImageView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-//        // A rounded rect will be printed.
+
+
+//        A rounded rect will be printed.
 //        canvas.drawRoundRect(rectF, 10, 10, paintBorder);
-//     //   canvas.drawRect(0, 0, 200, 200, paintBorder);
-//
-//       // canvas.drawRect(10,0,10,10,paintBorder);
-//       // canvas.drawRoundRect(rectF,0,0,paintBorder);
+//        canvas.drawRect(0, 0, 200, 200, paintBorder);
+//        canvas.drawRect(10,0,10,10,paintBorder);
+//        canvas.drawRoundRect(rectF,0,0,paintBorder);
+
 
 
 
@@ -87,6 +89,7 @@ public class BorderedImageView extends ImageView {
         canvas.drawLine(rectF.right + strokeWidthPx/2, rectF.top,rectF.right + strokeWidthPx/2,rectF.bottom, paintBorder);
         //bottom border
         canvas.drawLine(rectF.left, rectF.bottom + strokeWidthPx/2, rectF.right, rectF.bottom + strokeWidthPx/2, paintBorder);
+
 
 
 
